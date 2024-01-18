@@ -24,3 +24,30 @@ public function sendEmail(Request $request) {
     }
 ```
 
+# Mail
+
+Este es un archivo que controla la información que se renderiza en el correo
+
+```
+class recuperarContrasenaMail extends Mailable
+{
+    use Queueable, SerializesModels;
+
+    /**
+     * Create a new message instance.
+     */
+    public function __construct()
+    {
+        //
+    }
+
+    public function build()
+    {
+        return $this->view('mails.videogame');
+    }
+}
+
+```
+# View
+
+Este es el HTML que renderiza el correo.

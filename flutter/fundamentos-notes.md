@@ -1,6 +1,6 @@
 # Comandos principales
 ~~
-Correr proyecto de flutter~~
+Correr proyecto de flutter~~  
 ```
 	flutter run
 ```

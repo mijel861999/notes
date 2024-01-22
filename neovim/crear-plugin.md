@@ -28,4 +28,9 @@ Ahora, para correr este plugin, lo que haremos será escribir este comando
 
 Si intentamos ejecutar esto por segunda vez, veremos que no funciona el print. Necesitaremos hacer que neovim olvide nuestro plugin y volver a cargarlo. Para ver si está cargado el plugin utilizaremos este comando
 
-```lua print(package.loaded["nombre_plugin")]))```
+```lua print(package.loaded["nombre_plugin")]))```  
+Para hacer que este plugin se olvide, utilizaremos este comando
+
+```lua package.loaded["my_plugin"] = nil```  
+
+

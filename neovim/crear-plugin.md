@@ -14,14 +14,14 @@ En el contexto de Neovim, puedes utilizar Lua para personalizar y extender sus f
 
 Para crear tu plugin, al utilizar lua, necesitaremos crear una carpeta con el mismo nombre, y dentro de esta carpeta crear una carpeta con el mismo nombre del plugin, en este caso será "my_plugin", ya dentro de esta carpeta, crearemos el archivo "init.lua". Agregaremos una línea para imprimir
 
-```print"Hola mundo")```   Par
+```print"Hola mundo")```    
 Para que se corra este arhivo, necesitaremos agregarlo al runpath de neovim, lo haremos con este comando
 
 ```set runpath+=./```
 
 O al iniciar neovim, puedes ingresarlo con este comando
 
-```nvim -c "set rtp+=./"```
+```nvim -c "set rtp+=./"```  
 Ahora, para correr este plugin, lo que haremos será escribir este comando
 
 ```lua requrie("nombre_plugin")```
